@@ -11,6 +11,7 @@ class Person:
     def showage(self):
         print self.age
         return self.age
+    
 class Employee(Person):
     def __init__(self,name,age,e_no):
         Person.__init__(self,name,age)
@@ -19,6 +20,7 @@ class Employee(Person):
     def showemp(self):
         print self.e_no
         return self.e_no
+    
 class Employee2(Employee):
     def __init__(self,name,age,e_no,e_salary):
         Employee.__init__(self,name,age,e_no)
